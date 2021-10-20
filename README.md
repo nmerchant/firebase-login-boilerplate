@@ -8,7 +8,7 @@ Boilerplate code for a React app using Firebase services, with email account use
 
 3. Update `src/firebase.js` with your project's information:
 ```
-firebase.initializeApp({
+firebase.initializeApp ({
     apiKey: "<your api key here>",
     authDomain: "<your auth domain here>",
     databaseURL: "<your database url here>",
