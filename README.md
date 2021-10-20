@@ -6,6 +6,8 @@ Setup a Firebase project: https://console.firebase.google.com/
 
 Make sure you have the Firebase CLI installed: https://firebase.google.com/docs/cli
 
+Update `src/firebase.js` with your project's information.
+
 Run these commands:
 ```
 $ npm install
