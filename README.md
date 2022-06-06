@@ -1,4 +1,4 @@
-Boilerplate code for a React app using Firebase services, with email account user login already set up.
+Boilerplate code for a React app using Firebase services and Material UI, with email account user login already set up.
 
 # Setup
 
