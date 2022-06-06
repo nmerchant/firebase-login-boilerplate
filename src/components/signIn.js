@@ -55,36 +55,38 @@ const SignIn = (props) => {
                 break;
             case 'auth/network-request-failed':
                 return 'Network unreachable.  Have you tried turning it off and back on?'
+                break;
             default:
                 return 'Unknown error logging in.'
+                break;
         }
     }
 
     const TransitionAlerts = () => {
-      return (
-        <Box sx={{ width: '100%' }}>
-          <Collapse in={open}>
-            <Alert
-                severity="error"
-              action={
-                <IconButton
-                  aria-label="close"
-                  color="inherit"
-                  size="small"
-                  onClick={() => {
-                    setOpen(false);
-                  }}
-                >
-                  <CloseIcon fontSize="inherit" />
-                </IconButton>
-              }
-              sx={{ mb: 2 }}
-            >
-              {errorMessage}
-            </Alert>
-          </Collapse>
-        </Box>
-      );
+        return (
+            <Box sx={{ width: '100%' }}>
+                <Collapse in={open}>
+                    <Alert
+                        severity="error"
+                        action={
+                            <IconButton
+                                aria-label="close"
+                                color="inherit"
+                                size="small"
+                                onClick={() => {
+                                    setOpen(false);
+                                }}
+                            >
+                            <CloseIcon fontSize="inherit" />
+                            </IconButton>
+                        }
+                        sx={{ mb: 2 }}
+                        >
+                        {errorMessage}
+                    </Alert>
+                </Collapse>
+            </Box>
+        );
     };
 
     return (
